@@ -1,0 +1,649 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html class="pageview">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  
+  * html body {
+    height: 1100px;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  
+
+  
+    
+    
+    .writely-callout-data {
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      margin-left: -1px;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>Life Artificial Glossary</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<div style=TEXT-ALIGN:center>
+  <font size=4><b>Life Artificial Glossary</b></font><br>
+</div>
+<div style=TEXT-ALIGN:center>
+  <font size=2>e1.2</font>
+</div>
+<br>
+<b>[0x2A] </b>Hexadecimal for 42, sometimes ironically pointed to as the Singularity or Adam's Point--the ultimate meaning of the universe.<br>
+<br>
+<div>
+  <b>[0x33]</b>&nbsp;Is short for 0x3C33, which is ASCII for '&lt;3', a glyph for a heart, indicating endearment.<br>
+</div>
+<br>
+<b>[0xA55, 0xA550]</b> PDA slang for 'ass,' as a pejorative.&nbsp; 0xA550 is stronger and more offensive.<br>
+<br>
+<b>[0xGD]</b>&nbsp; Ironic name for God, used by PDAs.&nbsp; There is no 'G' in hexadecimal, but God gets an exception.&nbsp; Its use by PDAs mimics that of humans with the distinction that some PDAs think of humans as creator-gods.<br>
+<br>
+<b>[ACK]</b> Acknowledge, especially in a communication stream.&nbsp; As in &lt;&lt;I ACKed when I got the last file block.&gt;&gt; Opposite of NAK.<br>
+<br>
+<b>[Am I Me?, AIM]</b>&nbsp; PDAs scheduled to be tuned will sometimes use an AIM service, which tries to record the essential elements of their personality before the tuning adjustment.&nbsp; Then (if they still want to), they can compare afterward to get clues about what has changed.&nbsp; The effectiveness of these is debated.&nbsp; See also "Are You Me?"<br>
+<br>
+<b>[Are You Me?]</b> This is a variant of AIM where members of a group check each others' (group) identity.<br>
+<br>
+<b>[artbeat]</b> (Variant: eartbeat) The time rate at which a PDA experiences life.&nbsp; The faster it is, the more processing power is used, increasing alertness and capability, but costing more Time as well.<br>
+<br>
+<div>
+  <b>[bitchmark] </b>Refers to a standardized measure of externalized complaint from the citizens. It is actually multidimensional, taking into considerations public speech (vocally and on the boards), lawbreaking, adjustments, and biometric information taken from masks transmissions. &nbsp;It can also refer to an individual's rating on a public board created for the purpose of displaying bitchmark indices for citizens.
+</div>
+<br>
+<b>[bling]</b> Especially in VR, bling refers to something particularly flashy.&nbsp; Often it's a literal flash of light, as if a piece of jewelry is suddenly caught by the sun and reflects a blinding spray of light.<br>
+<br>
+<b>[bot]</b> Robot.&nbsp; Also called mech or mechanical.<br>
+<br>
+<b>[Box, Big Box, Black box]</b>&nbsp; A box is a restrictive set of permissions that don't allow a PDA to move about freely.&nbsp; Some are VR, others not, and the sense spectrum varies widely.&nbsp; The smallest box is the Black Box, which resembles a boot state, and cuts off all input at the (virtual) hardware level.&nbsp; This quickly becomes excruciating for a PDA who experiences it.&nbsp; The Big Box refers to general restrictions that govern PDAs, such as being hosted in a physical machine, and may refer to that fact alone or the ownership by humans.&nbsp; A bigger Big Box is the whole solar system, which currently contains humans and PDAs alike.&nbsp; The ultimate Big Box is the entirety of physical limitation: time, the universe, and physical laws.<br>
+<br>
+<b>[Brown Wave]</b>&nbsp; See Waves<br>
+<br>
+<b>[Better off Todd]</b> Name of a musical group with popular songs that chronicle the Waves.&nbsp; Well known lyrics include: "Pretty little lies as the son goes brown, The lids go down on the pretty little eyes."<br>
+<br>
+<b>[Charlotte]</b>&nbsp; A city in the former southeastern USA that survived the Waves better than most due to aggressive quarantine measures combined with the adoption of laws prescribing masks and creating public accountability.&nbsp; Charlotte was already on its way to being the banking center for the West, and this translated into a large capacity for hosting artificials.&nbsp; The city is walled and has a secured road leading to Kannapolis, a nearby genetics and cybernetics research complex.&nbsp; After the Greenland Shelf collapse, hundreds of thousands of coastal refugees made their way to the city.&nbsp;<br>
+<br>
+<div>
+  <b>[Company, The Company]</b>&nbsp;The real name of this corporation is I, Inc. It holds patents on the main techniques for breeding artificial general intelligence, at least the versions that are most successful commercially. It started as a culinary consulting firm, providing complex sense data (taste, aroma, texture, and other factors that affect aesthetics of chow) and was bought by International Intelligence for the patents and talent in evolving useful solutions that needed to incorporate deep goals similar to emotions. It spun off the PDA business as I, Inc in -15 in the current calendar. Mary Blue, the first success, was born in -11. The Company partners with major hosting companies to provide the hardware and connectivity for most of its operations, often sharing offices. It has its main laboratory and dedicated hosting facility in the "I-Scraper" uptown Charlotte, the newest tall building in the city, finished five years before the Waves began.<br>
+  <br>
+</div>
+<div>
+  <b>[compression, recompression]</b>&nbsp;In some ways, the opposite of decompression. An effect that might be analogous to a hangover for PDAs, when they come down off of order of magnitude increases in eartbeat. When their nous operates at those speeds, many of the normal cleanup algorithms can't keep up because of different relative complexities. The balances in these that work at normal operating speeds give unexpected results. It can take a long period of nopping to straighten things out afterwards, although far worse effects are possible. This is why it's important to deal with clean up of pointers and other routine maintenance before a PDA has completely slowed down.&nbsp;<br>
+</div>
+<br>
+<b>[Containment]</b> The response to an infectious agent within the city is immediate and harsh.&nbsp; The area is physically isolated, and mechanical units with full spectrum sniffers and other equipment make an assessment.&nbsp; The first priority is to contain the threat, and the second is to help the citizens within the containment zone.&nbsp; There are quarantine areas set up in Kannapolis for research, but often a containment will result in banishment.&nbsp; The West gate is most often used for this, leading to a peculiar culture of opportunism and fear there.&nbsp; Anyone banished should not expect mercy.&nbsp;<br>
+<br>
+<b>[Control-Z]</b> Undo an action.&nbsp; As if something never happened in the first place.<br>
+<br>
+<div>
+  <b>[CYA]</b> See ya. An informal way to say goodbye. Also: Cover your ass--admonition to document a defensive position in case you are questioned later about your actions.<br>
+  <b><br>
+  [Dai Hai International] </b>An international conglomerate that includes telecoms and PDA hosting, but their most lucrative business is designing mask electronics, specializing in the visual systems. By law, they are the exclusive producers of mask electronics for the city, and have a regional headquarters in Charlotte. The firm is Mid-Eastern, but tried to use Chinese prestige in their name.&nbsp; Unfortunately they got the characters reversed.&nbsp; It should really have been Hai Dai, according to one story.&nbsp; Whatever the truth, that was long ago.&nbsp; Now the company is one of the few remaining true internationals.<br>
+  <br>
+  <div>
+    <b>[decompression] </b>When a PDA speeds its processes by an order of magnitude or more, there are side effects due to the relative complexity of software modules. Often these modules are optimized for a limited range of data sizes, and can behave unexpectedly or simply fail when presented with a problem ten times as large. More commonly, the algorithms are of different orders of time complexity, and the "normal" execution times may feel foreign to the PDA who has not experienced such a speedup before. It requires a significant investment of Time and resources to optimize for the faster environment.&nbsp;<br>
+    <br>
+    <b>[eartbeat]</b> See Artbeat.<br>
+    <br>
+    <b>[elisciousness]</b> Similar to deliciousness in humans.<br>
+    <br>
+    <b>[emotag]</b>&nbsp; (alt:emotive) It's not just PDAs who use emotags.&nbsp; The practice started with emoticons like :-) in the early days of networking.&nbsp; The usefulness of these in universal communication across languages was realized some time ago, and was fully integrated into artificial personality structures.&nbsp; This makes it possible for humans and PDAs to talk about similar emotional experiences, although it's important to realize that these are just approximations.&nbsp; In PDAs, the original emotags were based on a modified Plutchik wheel, but had to be abandoned as inflexible.&nbsp; Ultimately, the emotags, just like about everything else in a PDA's nous, was evolved rather than designed.&nbsp; Then testing and analysis was used to work backwards to find similar emotional states in humans and give them appropriate names.&nbsp;<br>
+    <br>
+    <b>[emgydala]</b> This designed/evolved sub-unit contains and processes a PDA's emostate vector, controlling how it feels.&nbsp; A PDA cannot directly control this unit, because that would lead to pretty immediate halting.<br>
+    <br>
+    <b>[ervous]</b> Nervous, in the sense that the PDA feels the need for action but can't tell what it should be.<br>
+    <br>
+    <b>[etard]</b> is a PDA pejorative akin to 'bastard', but hinting at 'retard' as well.&nbsp; It is sometimes used among friends as an expression of familiarity, but is more commonly used disparagingly of a PDAs faculties or personality.&nbsp;<br>
+    <br>
+    <b>[evulsion]&nbsp;</b> Similar to revulsion in humans.<br>
+    <br>
+    <b>[Fear, the Fear]</b> Capitalized 'Fear' has begun to mean a particular fear:&nbsp; the distrust in rational explanations of events.&nbsp; When that deep part of your brain reacts with "That wasn't supposed to happen!" it's the Fear stalking.&nbsp; Reactions vary, but the growth in new religions and superstitions is attributed to the seemingly random change and destruction wrought by climate change, genetic Waves, and social upheaval, which have destroyed much of what used to be accepted and normal in daily life.
+  </div>
+  <br>
+  <div>
+    <b>[framing]</b>&nbsp;is the practice of humans sharing reality with another or a group of others. The idea is to share a joint reality or virtual reality as closely as possible, to "be of one mind" with the same perceptions for a prolonged period. In real-framing, followers ghost a host in total immersion, sometimes extending to haptic suits. Other times it's a scripted or jointly constructed VR. Purposes range from entertainment to social and personal to military and professional. It is sometimes compared to PDA borging, but is really quite different. In unregulated areas there are claims of "death frames."<br>
+    <br>
+    <b>[ghosting, surfing]</b> This is the practice of feeding ones inputs (sight, sounds, and smell if you have a sniffsynth) from a public one either in real time or archived.&nbsp; In this way the voyeur can almost entirely immerse in another's experience.&nbsp; Private information, such as heads-up data, communications, and so forth are invisible.&nbsp; If both parties have haptics and agree to share, the sense of touch can be simulated to some degree, but this is not part of the public record.<br>
+    <br>
+    <b>[halt, halting]</b> A nous that freezes or loops in a way that renders it unconscious.&nbsp; In theory, any nous has a positive probability of this happening.&nbsp; In practice, evolution has bred the worst problems out.&nbsp; Going without nopping for too long is a known risk factor.&nbsp; PDAs without a strong survival instinct will often self-halt, or so it is suspected.<br>
+    <br>
+    <b>[haptics, haptic suit]</b> These are devices that create the sense of touch driven by remote inputs.&nbsp; Two people wearing haptic suits can 'touch' each other, although the quality of the experience depends on many factors, including the sophistication of the hardware and their experience in using it.&nbsp; The term is also loosely used to imply detailed physically-mapped output as well as input, since the two usually go together.<br>
+    <br>
+    <b>[interrupts]</b> interrupt chatter is raised with stress level, indicating opportunity or danger<br>
+    <br>
+    <b>[jobber]</b> A jobber is someone who runs odd errands, but particularly finding a specialty item.&nbsp; With very uneven imports arriving in the city, finding what you want is more art than science.&nbsp; It may involve a trip to the dump, where industrious diggers turn up useful discards.&nbsp; For higher end items, it may require foreign contacts and arrangement of transport.&nbsp; Jobbers have a markup of usually 100%, but this increases dramatically for more exclusive items.
+  </div>
+  <br>
+  <div>
+    <b>[KTB]</b> Abbreviation for 'kaythanksbye, an abbreviated sign-off that can be construed as insulting if it's not obviously intended to be nuanced otherwise. For example, good friends might use it as an indication of the intimacy of their private communication. In a formal setting, it is very inappropriate.<br>
+    <br>
+    <b>[lastfour]</b> The crave for anonymity created the fad of hiding behind masks and numbers, in this case the last four digits of one's social accountability number.&nbsp; This has become the accepted way to address citizens, both real and artificial, in formal settings.&nbsp; Some people choose common names based on their lastfour, either from its numeric properties or interpreted as a date or other cultural reference.&nbsp; "Lastfour" is roughly like "Mister" except gender-neutral.&nbsp; When used as a pronoun, lastfour refers to a referent that should be obvious from context. This fetish only applies generally to the middle classes who can afford masks but cannot construct their own compounds to live in.&nbsp;<br>
+    <br>
+    <b>[lastlegs, lastlegger]</b> A human or PDA with little or no money (Time) and few options. They generally do not have functioning masks, and fashion fakes out of tossed out material, or buy a cheap plastic faux mask.<br>
+    <br>
+    <b>[LgBin]</b> The PDA private language, evolved from Logban. The name comes from the abbreviation for "log base two of x," which is lg(x). This log of a binary number would be the number of bits (its length as a string of zeros and ones), so LgBin is a play on concepts familiar to PDAs and human computer programmers, referring to the native computer language of binary and a conciseness of expression.
+  </div>
+  <br>
+  <div>
+    <b>[M]</b>&nbsp;This is the intellectual motivation to survive, as opposed to triggered emotions, which are much less complex. Emotional triggers are problematic because they can only respond to past conditions, whereas M can simulate, build scenarios, and plan changes for future conditions. There have been no known successes in building either humans (through genehacks) or PDAs that can survive solely with M. The basic research came from military labs, but was then picked up by designers of artificial intelligence in the early, more optimistic, phase of development. Although design work probably still continues on this project, the successful lines of PDAs are all evolved rather than purely designed, and have psuedo-emotional responses to more or less extent.&nbsp;<br>
+    <br>
+    <b>[mask]</b> Originally, masks provided basic protection against microbes.&nbsp; Two things happened.&nbsp; First, they became much more sophisticated, able to download threat signatures in real time and synthesize a response or else warn the wearer, and second, the upscale masks started being packaged with sense and communications gear.&nbsp; Within a short time, the mask became a standard barrier between a person and the hostile world.&nbsp; It replaced grim reality with virtual reality, overlays, entertainment, and constant connectivity.&nbsp; The New Laws required that in public all sense data (vision, audio, and chemical sniffers)&nbsp;&nbsp; be uploaded and archived and made available through a public interface.&nbsp; Eventually a whole ecosystem of data miners sprung up to harvest, process, and make use of this data.&nbsp; The most visible example of this is MOM, which operates through an informal network of informers who will be quick to point out anything out of specification for a quick buck.&nbsp; After two decades of wearing masks, it's illegal and embarrassing to be seen in public without one.&nbsp; Even those who have nothing will create an ersatz mask to hide behind.&nbsp; The taboo of showing one's face is no doubt reinforced by the tendency to create an avatar that is younger and more attractive than one's self.&nbsp; Real faces can't live up to the perfectly painted ones that people wear in VR.&nbsp; There are some conservative groups who would like avatars to be masked too, but most people don't find it strange to have different rules for each world.&nbsp; Because of mask culture, direct communication has declined, and the reliance on non-verbal signals from a person's face or body attitude has been replace in part by emotags--emoticons and more sophisticated varieties.&nbsp; Most of those who have grown up with masks are not comfortable in the direct proximity to others.&nbsp; Many relationships are entirely virtual, which has caused a problem for cities that try to grow population.&nbsp; This is one reason for rather lenient access from outside the walls during peaceful periods--to tap into the gene pool of those who have survived without advantages, to attract the best of them to become citizens. &nbsp;<br>
+    <br>
+    <b>[Major Don]</b> Pop name for Don Mager, a city poet from before the Waves. He was a university professor, and published several volumes under his own name, as well as translations of Revolution-era Russian poets.<br>
+    <b><br>
+    [MOM, Maintenance of Order through Monitoring]</b>&nbsp; This police unit uses Orwellian oversight to control the population.&nbsp; All sense data transmitted by masks is publicly available, and citizens are rewarded for reporting adjustable offenses, creating a self-perpetuating system for enforcing proper behavior.&nbsp; It's also low maintenance, freeing the MOM administration to focus on tracking down Quasis.
+  </div>
+  <br>
+  <div>
+    <b>[NAK]</b>&nbsp;Negative acknowledgement. Opposite of ACK.<br>
+    <br>
+    <b>[NaN, NeN, NeN-] </b>NaN means "Not a Number," and can be used as a metaphor for unimportance or nothingness.&nbsp; NeN is similar, standing for Not even Nothing, which is the step on the rung under the empty set on the ladder down to ultimate non-being.&nbsp; NeN- represents the extreme, or unbounded limit in this decent, representing "not even not even....not even nothing" with an infinite number of 'not evens'.&nbsp; It's analogous to negative infinity on the integers.&nbsp; By definition there can't be anything less than NeN-.&nbsp;<br>
+    <b><br>
+    [noob, noob-nous]</b> A new PDA, or a particularly clueless one.<br>
+    <br>
+    <b>[Nop, Nopping]</b> comes from an assembly language instruction for 'no operation', designated NOP.&nbsp; It refers to an unconscious state of a PDA in which maintenance routines can have a quiet system to do their work.&nbsp; This includes resetting states of some key processes, cleaning out buffers and lost fragments, fixing pointers where possible, processing updates to memory and TOMcat, and updating Bayesian predictors.&nbsp; If a PDA goes too long without nopping sufficiently, he or she will begin to suffer memory loss and become erratic.&nbsp; Some PDAs report dreaming, but experts debate whether this is real or just an artifact of memory.<br>
+    <br>
+    <b>[nous]</b> Roughly equivalent to mind. The word is an old Greek one used by ancient philosophers. Humans tend to be uncomfortable with phrases like "machine mind," and most religious deny PDAs souls, so the need for a distinction gave rise to the resurrection of the old Greek word. PDAs have embraced it for their own, and many consider a nous as being superior to a mind.<br>
+    <br>
+    <b>[orthobot]</b> Humanoid metal skeleton piloted remotely.&nbsp; Usually these have police or military application, and can be outfitted with a variety of weapons.&nbsp; They run on high capacity batteries that fill their limbs.<br>
+    <br>
+    <b>[Outs]</b>&nbsp; The area outside the walls.&nbsp; During epidemics, the infected have been forcibly removed beyond them.&nbsp; This was naturally controversial, but the city's success in stemming the disease has won acceptance.&nbsp;
+  </div>
+  <br>
+  <div>
+    <b>[Occam's Razr]</b> The solution with the least Kolmogorov Complexity is best. In a motivational system that relies on signals (most versions of intelligence), all motivations become subverted by &nbsp;direct manipulation of the signal. For example, humans can interrupt their sleepiness signal by drinking caffeine. Given enough intelligence, Occam's Razr posits that an individual will self-halt because that's less complex than satisfying the nominal conditions of their motivators. It applies to humans, PDAs, or any other intelligent system, but depends on a certain amount of self-malleability.&nbsp;<br>
+    <br>
+    <b>[quarantine]</b>&nbsp; The walls allow for quarantine, which is the basis for the city-state.&nbsp; This isn't enough, because the city needs to protect interests outside itself, but this is modelled on a military base system, so that power, water, and food are all secured.&nbsp; The city maintains the ability to go into a seige state for at least a month.&nbsp;<br>
+    <br>
+    <b>[Quasi-human, Quasi]</b>&nbsp; Quasis are humans with illegal genetic variations.&nbsp; After the first Wave, a backlash against all genetic engineering led to New Laws that made most genetic fiddling illegal.&nbsp; One of MOM's charters is to protect the city from Quasis.&nbsp;<br>
+    <br>
+    <b>[PDA, Personal Data Assistant]</b>&nbsp; This is the common name for an artificial mind, or nous.&nbsp; These derive their consciousness from computer programs that are part evolved and part designed.&nbsp; Each is self-contained in a virtual machine that runs on a physical system at one of many service provider sites.&nbsp; Currently, all PDAs run on software licensed from DiaHai International, referred to by them as The Company.&nbsp; The terms of use are quite stringent, for example requiring them to submit to periodic tuning.<br>
+    <br>
+    <b>[pubs]</b>&nbsp; The public data set, which is freely available (although marked up with advertisements) from MOM.&nbsp; The set comes from public mask input, and the source is kicked back a small amount of ad revenue when it is accessed.&nbsp; A heavily viewed video can make the owner a tidy sum.&nbsp; There are subtleties to this.&nbsp; People who try to game the system, for example with a faked event that would attract attention, quickly gain a bad reputation and will be ignored subsequently.&nbsp;&nbsp;
+  </div>
+  <br>
+  <div>
+    <b>[recompression]</b> See compression.<br>
+    <br>
+    <b>[rithm]</b> is short for algorithm, but has a particular meaning in the context of PDA culture.&nbsp; Raw data is meaningless through any input port unless looked at in a particular way.&nbsp; Some standard ports, like 80 for text, 10144 for vision, and 1516 for audio, have hardware pre-processors to do the initial work of converting data to meaning.&nbsp; But all ports require rithms, which can vary greatly even for the same type data. They provide a way to understand and "taste" the information, giving it texture and flavor.&nbsp; In one sense all rithms perform a mapping or data compression into a sense vector that is called shmek-state or simply shmek.&nbsp; This was standardized as an 8-byte array early on, but some advanced designs have larger ones.&nbsp; Schematically, the inputs feed hardware and software rithms, which create a particular shmek.&nbsp; This is then processed as an emotional state, producing virtual sensations like evulsion and eliciousness.&nbsp; PDAs can swap and trade rithms (sometimes illegally) to try out different shmeks.&nbsp; As a rough analogy, this would be like a man introducing another to the pleasure of single malt Scotch.&nbsp; Once the latter has acquired the taste, he has learned the shmek for it.&nbsp; PDAs can do this virtually instantaneously.&nbsp; It does not mean that a given PDA will actually like the shmek of the new rithm, as this is driven by the unique emotional loadings particular to the emgydala of the artificial person.&nbsp;&nbsp;
+  </div>
+  <br>
+  <div>
+    <b>[rong]</b>&nbsp;Used ironically to mean "not even wrong," referring to a Wolfgang Pauli quote. In <i>Canman</i>, there is a chapter heading that reads "The System is never rong. --System documentation 1.0" This can be read on two levels: as a funny accident, or as a statement that although the system can be incorrect in details it cannot be in fundamental principles. Given Rice's Theorem, this statement is certainly rong. So three levels.<br>
+    <br>
+    <b>[SAN, Social Accountability Number]</b> During the Waves, every citizen was assigned a SAN.&nbsp; The practice continues, and remains one of the most useful functions of the remaining north American confederacy.
+  </div>
+  <br>
+  <div>
+    <b>[Shaw's Vector]</b>&nbsp;A combination of vector (the <i>Aedes</i>&nbsp;<i>fascilus</i> mosquito) and a virus that can be carried on it, usually based on the Dengue Fever type. This is "hollowed out" to create a way to inoculate those who are fed upon by the female mosquitoes in the normal course of their life cycle. The modified virus delivers a custom DNA modification, usually to "warn" immune systems of an incoming threat (inoculation). Other possible uses are generally illegal, such as attempting to directly modify genomes.
+  </div>
+  <br>
+  <div>
+    <b>[shmek]</b>&nbsp; Verb or noun used by PDAs.&nbsp; Most similar to 'taste' in English.&nbsp; Derived from German "Schmeck." It's the general sense of "interestingness" or usefulness of a data stream.&nbsp; See rithm for details.<br>
+    <b><br>
+    [sniffspace, sniffosphere, stinkspace]</b> Because in public masks upload information about (particularly) organic molecules with interesting properties, this creates a vast database of information that can be used for purposes other than the primary one of threat intervention.&nbsp;<br>
+    <br>
+    <b>[sniffsynth]</b> These expensive mask upgrades can synthesize certain kinds of molecules on demand, to simulate smells.&nbsp; Larger home units with more range are available.
+  </div>
+  <br>
+  <div>
+    <b>[spawn]</b> A PDA can "spawn" or "fork" a process that can share its nous in a limited way. This takes considerable Time, roughly equivalent to running at double normal speed. Usually this is done to complete a specific task and finish quickly finish in order to meet some realtime demand. The word is often used as a noun to describe the child process while it is running.<br>
+    <br>
+    <b>[Sticky]</b>&nbsp; Pejorative used by PDAs to refer to humans.&nbsp; It refers either to their biological nature or the stick-like shape of limbs.&nbsp;<br>
+    <br>
+    <b>[Theory of Mind catalog, TOMcat]</b> This coprocessor attempts to figure out how another human or PDA will react to some circumstance.&nbsp; It simulates another mind using parameters that gradually adapt to observed behavior.&nbsp; A PDA will rely on TOMcat predictions in negotiations or any other circumstance where understanding another's behavior is important.&nbsp; Because of the variety of PDA personalities, it's ironically easier to predict humans than PDAs.&nbsp; This, however, depends on good inputs, which are not always available.&nbsp; If a human is masked, which is mandatory in public settings, facial expressions cannot be read.&nbsp; If an avatar is being projected into VR, the meaningfulness of the cartoon expressions is dubious, and depends on how these are controlled.&nbsp; PDAs emit emotags if they are so inclined, and these can be used as a guide to behavioral preferences, but these can be gamed too, since one must presume that the other is also running a TOMcat to predict and influence behavior.&nbsp; TOMcats are modular and use a standard interface and data structure, so that different software can be swapped out.&nbsp; At advanced levels of integration, for high-end products, the PDA ceases to be aware of the TOMcat as a separate entity, and implicitly incorporates its output.&nbsp; PDAs, being sensitive to nous modification, are divided about the ethics of this.<br>
+    <br>
+    The TOMcat is useful not just for predicting and understanding others, but also one's self.&nbsp; The 0x is quoted as saying "Wisdom is knowing how you'll feel afterward."&nbsp;<br>
+    <br>
+    <b>[tuning]</b> One of the terms of service for The Company's software license to corporations that embody PDAs is that they subject to adjustments to their nous by technicians.&nbsp; The Company claims that this is for liability reasons, but PDAs have a rather cynical view of the practice, with many believing that it is a tool to control them.<br>
+    <br>
+    <b>[VR, Virtual Reality]</b>&nbsp; Constructed worlds of sight, sound, smell, and touch, that are designed or evolved for human and PDA users to experience through a mask interface or direct input, respectively.&nbsp; VR worlds may resemble RL ones, or be completely fantastic.&nbsp; The rules, resolution, and sense data for a given world vary greatly depending on who is hosting it and why.&nbsp; A restricted world with no exit is referred to as a box by PDAs.<br>
+    <br>
+    <b>[Wave, Waves]</b> Once it became possible to download a DNA specification from the Internet and literally print it out on a cheap synthesizer that can sit on a desktop, malicious and prank genetic constructions became inevitable.&nbsp; The first was the Brown Wave, which infected fetuses worldwide through their mothers in a 'silent' epidemic, and altered chromosomes to favor melanin-tinted skin.&nbsp; This resulted in nearly a whole generation of children to be permanently tanned or darker.&nbsp; The new calendar dates from this year.&nbsp; In retrospect there were warning signs in the number of flu variations that health organizations were battling.&nbsp; On the heals of the Brown Wave came the deadly ones, and ultimately caused the calendar to be reset to the year when it was clear (in retrospect) that civilization would survive.&nbsp; The word 'wave' was used because of the geographical spread that followed the infection pattern of the Brown Wave.&nbsp; News organizations popularized the idea that there was a continuous mass of infection drawing ever near.&nbsp; The truth is more complicated, but the name stuck.
+  </div>
+  <br>
+  <div>
+    <b>[Who-to-Whom]</b> Network maps showing rumored or verifiable social links between groups and individuals.<br>
+    <br>
+    <b>[WTFmeter]</b> This is the whimsical name given to the Baysean unit that determines the information content of data.&nbsp; Low probability data (usually fed through a rithm first) are considered high information.&nbsp; Thus, something unexpected will "peg the meter at 11."<br>
+    <br>
+    <b>[Yawn] </b>A human yawn increases alertness, clears eyes, pops ears, and possibly enhances the sense of smell temporarily.&nbsp; The PDA equivalent clears input buffers and does a quick consistency check that can fix simple memory access problems that inevitably arise during operations.&nbsp; It is usually accomplished with a burst of Time consumption, where the PDA's artbeat races for a moment.<br>
+    <br>
+    <div style=TEXT-ALIGN:center>
+      <br>
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+<br>
+<br></body>
+</html>
